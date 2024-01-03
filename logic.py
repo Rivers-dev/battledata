@@ -62,7 +62,7 @@ with open(csv_file_path, 'w', newline='') as csv_file:
     csv_writer = csv.writer(csv_file)
 
     # Write header row
-    csv_writer.writerow(['Event ID', 'Event Result Type', 'Encounter Type', 'Enemy HP', 'Damage Dealt', 'Damage Type', 'Completed On'])
+    csv_writer.writerow(['Event ID', 'Event Result Type', 'Encounter Type', 'Crystal Type', 'Enemy HP', 'User ID', 'Damage Dealt', 'Damage Type', 'Completed On'])
 
     # Write data rows
     for event_result in sorted_data:
@@ -71,16 +71,18 @@ with open(csv_file_path, 'w', newline='') as csv_file:
 
         set_info = event_result.get('eventResponseData', {}).get('sets', [])[0]
         
-        for encounter_info in set_info.get('encounters', []):
+        for encounter_info in set_info['encounters']:
             encounter_type = encounter_info.get('type', 'N/A')
             enemy_hp = encounter_info.get('enemyHp', 'N/A')
+            encounter_id = encounter_info.get('encounterId', 'N/A')
 
             # Loop through each user's contribution
-            for contribution in encounter_info.get('battleContributions', []):
+            for contribution in encounter_info['battleContributions']:
+                user_id = contribution.get('userId', 'N/A')
                 damage_dealt = contribution.get('damageDealt', 'N/A')
                 damage_type = contribution.get('damageType', 'N/A')
                 completed_on = contribution.get('completedOn', 'N/A')
 
-                csv_writer.writerow([event_id, event_result_type, encounter_type, enemy_hp, damage_dealt, damage_type, completed_on])
+                csv_writer.writerow([event_id, event_result_type, encounter_type, encounter_id, enemy_hp, user_id, damage_dealt, damage_type, completed_on])
 
 print(f'CSV file saved at: {csv_file_path}')
