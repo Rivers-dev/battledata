@@ -1,5 +1,6 @@
 import json
 import csv
+from datetime import datetime
 
 # CHANGE ME IF YOU WANT TO CHANGE JSON PATH
 json_file_path = 'new.json'
@@ -41,8 +42,8 @@ for event_result in sorted_data:
         f"Completed On: {event_result['eventResponseData']['sets'][0]['encounters'][0]['battleContributions'][0]['completedOn']}"
     )
 
-# CHANGE ME IF YOU WANT TO CHANGE THE CSV OUTPUT PATH
-csv_file_path = 'output.csv'
+current_datetime = datetime.now().strftime('%Y%m%d%H%M%S')
+csv_file_path = f'output_{current_datetime}.csv'
 
 with open(csv_file_path, 'w', newline='') as csv_file:
     csv_writer = csv.writer(csv_file)
@@ -69,3 +70,5 @@ with open(csv_file_path, 'w', newline='') as csv_file:
                 completed_on = contribution.get('completedOn', 'N/A')
 
                 csv_writer.writerow([event_id, event_result_type, encounter_type, encounter_id, enemy_hp, user_id, damage_dealt, damage_type, completed_on])
+
+print(f'CSV file saved at: {csv_file_path}')
