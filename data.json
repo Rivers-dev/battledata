@@ -1,0 +1,87 @@
+{
+  "eventResults": [
+    {
+      "eventId": "454ea7c2-8bcd-4a6d-ba2d-f2e1d5d13436",
+      "eventResultType": "SUCCESS",
+      "eventResponseData": {
+        "sets": [
+          {
+            "setId": "cac84f13-057f-43d8-8543-e683b6152e55",
+            "encounters": [
+              {
+                "type": "Boss",
+                "enemyHp": 18000,
+                "battleContributions": [
+                  {
+                    "userId": "736d3d8b-fa2a-47b3-9b63-9a24a7ea7eb7",
+                    "gameRoundId": "b3770342-5e96-4ca9-b048-554e36f7d032",
+                    "damageDealt": 5719,
+                    "damageType": "Bomb",
+                    "startedOn": 1704276023471,
+                    "completedOn": 1704276023471
+                  },
+                  {
+                    "userId": "1a42eca6-4399-4058-934f-38104fde6653",
+                    "gameRoundId": "e23f2e6f-3c02-4c95-bd32-327b3311e342",
+                    "damageDealt": 4893,
+                    "damageType": "Bomb",
+                    "startedOn": 1704276212313,
+                    "completedOn": 1704276212313
+                  },
+                  {
+                    "userId": "7a80e9e2-4be8-446b-a15a-f628be77fbb1",
+                    "gameRoundId": "ce3c673d-0db7-4c36-938f-c6dcfdb90641",
+                    "damageDealt": 5673,
+                    "damageType": "Bomb",
+                    "startedOn": 1704276255235,
+                    "completedOn": 1704276255235
+                  },
+                  {
+                    "userId": "e7d3c453-124e-4a23-a8d9-efc90594d4c8",
+                    "gameRoundId": "b4e26648-8f1d-4ce0-8190-5cd7a9a1cf19",
+                    "damageDealt": 5429,
+                    "damageType": "Bomb",
+                    "startedOn": 1704276402033,
+                    "completedOn": 1704276402033
+                  }
+                ]
+              },
+              {
+                "type": "Crystal",
+                "encounterId": 1,
+                "enemyHp": 1440,
+                "enemyHpLeft": 1440
+              },
+              {
+                "type": "Crystal",
+                "encounterId": 2,
+                "enemyHp": 1440,
+                "enemyHpLeft": 1440
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "events": [
+    {
+      "eventType": "GLOBAL_CONFIG_UPDATE",
+      "eventData": {
+        "type": "GlobalConfigUpdateEventData",
+        "globalConfigState": {
+          "globalGameConfig": "7550f1adb076642260fc56aab2b6b5f9"
+        }
+      }
+    }
+  ],
+  "state": {
+    "globalGameConfigState": {
+      "globalGameConfig": "7550f1adb076642260fc56aab2b6b5f9"
+    },
+    "newsfeed": {
+      "PREVIEW": "26003f1a977df646428fd6513deb1c7a",
+      "SNAPSHOT": "10039f524049caa3c63f067d54d88490"
+    }
+  }
+}

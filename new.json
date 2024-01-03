@@ -1,0 +1,115 @@
+{
+  "eventResults": [
+    {
+      "eventId": "ffbb54fd-86aa-4405-81bc-52cb2699bbf0",
+      "eventResultType": "SUCCESS",
+      "eventResponseData": {
+        "sets": [
+          {
+            "tier": 3,
+            "set": 1,
+            "setId": "da21677e-8d31-402d-a5e9-840056a6116e",
+            "encounters": [
+              {
+                "type": "Boss",
+                "enemyHp": 1250000,
+                "battleContributions": [
+                  {
+                    "userId": "37ab5dec-9763-4309-811d-12e995edd351",
+                    "gameRoundId": "ae3e1200-ebe5-4321-8716-c22a94e0d241",
+                    "damageDealt": 370938,
+                    "damageType": "Battle",
+                    "startedOn": 1704283298561,
+                    "completedOn": 1704283501931
+                  },
+                  {
+                    "userId": "3c34ab26-66b4-4a33-b46c-d73e68a4a995",
+                    "gameRoundId": "ab52da73-dad4-4ed7-9fd3-45e5e79c614a",
+                    "damageDealt": 392535,
+                    "damageType": "Battle",
+                    "startedOn": 1704283511675,
+                    "completedOn": 1704283667219
+                  },
+                  {
+                    "userId": "e7d3c453-124e-4a23-a8d9-efc90594d4c8",
+                    "gameRoundId": "9c304a8c-ac18-42f4-b074-254f2c8036dc",
+                    "damageDealt": 439502,
+                    "damageType": "Battle",
+                    "startedOn": 1704284768021,
+                    "completedOn": 1704284997335
+                  },
+                  {
+                    "userId": "736d3d8b-fa2a-47b3-9b63-9a24a7ea7eb7",
+                    "gameRoundId": "feeee969-c1a1-44b6-bea0-6bf899ea7e34",
+                    "damageDealt": 47025,
+                    "damageType": "Battle",
+                    "startedOn": 1704286921288,
+                    "completedOn": 1704286953698
+                  }
+                ]
+              },
+              {
+                "type": "Crystal",
+                "encounterId": 1,
+                "enemyHp": 100000,
+                "battleContributions": [
+                  {
+                    "userId": "2ada8e45-433b-4eb2-8349-8070ac241e8f",
+                    "gameRoundId": "bb476823-70c9-4edc-b015-3a90dc774d59",
+                    "damageDealt": 100000,
+                    "damageType": "Battle",
+                    "startedOn": 1704282696532,
+                    "completedOn": 1704282939093
+                  }
+                ]
+              },
+              {
+                "type": "Crystal",
+                "encounterId": 2,
+                "enemyHp": 100000,
+                "battleContributions": [
+                  {
+                    "userId": "e53b23f6-08d0-4f72-95ab-fa0f8c8464cb",
+                    "gameRoundId": "f929c930-d9ab-472d-a45b-34e138b899be",
+                    "damageDealt": 99081,
+                    "damageType": "Battle",
+                    "startedOn": 1704282971602,
+                    "completedOn": 1704283120488
+                  },
+                  {
+                    "userId": "37ab5dec-9763-4309-811d-12e995edd351",
+                    "gameRoundId": "e137ad93-5e9d-4c09-a31f-b8f6c7f29a49",
+                    "damageDealt": 4762,
+                    "damageType": "Bomb",
+                    "startedOn": 1704283168260,
+                    "completedOn": 1704283168260
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "events": [
+    {
+      "eventType": "GLOBAL_CONFIG_UPDATE",
+      "eventData": {
+        "type": "GlobalConfigUpdateEventData",
+        "globalConfigState": {
+          "globalGameConfig": "7550f1adb076642260fc56aab2b6b5f9"
+        }
+      }
+    }
+  ],
+  "state": {
+    "globalGameConfigState": {
+      "globalGameConfig": "7550f1adb076642260fc56aab2b6b5f9"
+    },
+    "newsfeed": {
+      "PREVIEW": "26003f1a977df646428fd6513deb1c7a",
+      "SNAPSHOT": "10039f524049caa3c63f067d54d88490"
+    }
+  }
+}
